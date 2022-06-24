@@ -19,7 +19,6 @@ namespace HW_2_C_Sharp_Task_3
             string newText = inputText;
             for (int i = 122; i >= 65; i--)
                 newText = newText.Replace(Convert.ToChar(i), Convert.ToChar(i + shift));
-            Console.WriteLine(newText);
             for (int i = 122; i < 122 + shift; i++)
                 newText = newText.Replace(Convert.ToChar(i), Convert.ToChar(65 + i - 122));
             Console.WriteLine("\n\nYour text after convert into Caesar's code");
@@ -31,7 +30,6 @@ namespace HW_2_C_Sharp_Task_3
             {
                 for (int i = 65; i < 65 + shift; i++)
                     newText = newText.Replace(Convert.ToChar(i), Convert.ToChar(122 + i - 65));
-                Console.WriteLine(newText);
                 for (int i = 65; i <= 122 + shift; i++)
                     newText = newText.Replace(Convert.ToChar(i), Convert.ToChar(i - shift));
             }
